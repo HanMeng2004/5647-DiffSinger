@@ -9,7 +9,7 @@ import torch
 import torch.nn.functional as F
 from scipy import interpolate
 
-from basics.base_binarizer import BaseBinarizer
+from basics.base_binarizer import BaseBinarizer, BinarizationError
 from basics.base_pe import BasePE
 from modules.fastspeech.tts_modules import LengthRegulator
 from modules.pe import initialize_pe
@@ -32,6 +32,11 @@ VARIANCE_ITEM_ATTRIBUTES = [
     'midi',  # phoneme-level mean MIDI pitch, int64[T_ph,]
     'ph2word',  # similar to mel2ph format, representing number of phones within each note, int64[T_ph,]
     'mel2ph',  # mel2ph format representing number of frames within each phone, int64[T_s,]
+    'note_midi',  # note-level MIDI pitch, float32[T_n,]
+    'note_rest',  # flags for rest notes, bool[T_n,]
+    'note_dur',  # durations of notes, in number of frames, int64[T_n,]
+    'note_glide',  # flags for glides, 0 = none, 1 = up, 2 = down, int64[T_n,]
+    'mel2note',  # mel2ph format representing number of frames within each note, int64[T_s,]
     'base_pitch',  # interpolated and smoothed frame-level MIDI pitch, float32[T_s,]
     'pitch',  # actual pitch in semitones, float32[T_s,]
     'uv',  # unvoiced masks (only for objective evaluation metrics), bool[T_s,]
@@ -51,6 +56,17 @@ breathiness_smooth: SinusoidalSmoothingConv1d = None
 class VarianceBinarizer(BaseBinarizer):
     def __init__(self):
         super().__init__(data_attrs=VARIANCE_ITEM_ATTRIBUTES)
+
+        self.use_glide_embed = hparams['use_glide_embed']
+        glide_types = hparams['glide_types']
+        assert 'none' not in glide_types, 'Type name \'none\' is reserved and should not appear in glide_types.'
+        self.glide_map = {
+            'none': 0,
+            **{
+                typename: idx + 1
+                for idx, typename in enumerate(glide_types)
+            }
+        }
 
         predict_energy = hparams['predict_energy']
         predict_breathiness = hparams['predict_breathiness']
@@ -86,49 +102,51 @@ class VarianceBinarizer(BaseBinarizer):
     def load_meta_data(self, raw_data_dir: pathlib.Path, ds_id, spk_id):
         meta_data_dict = {}
 
-        for utterance_label in csv.DictReader(
-                open(raw_data_dir / 'transcriptions.csv', 'r', encoding='utf8')
-        ):
-            utterance_label: dict
-            item_name = utterance_label['name']
-            item_idx = int(item_name.rsplit(DS_INDEX_SEP, maxsplit=1)[-1]) if DS_INDEX_SEP in item_name else 0
+        with open(raw_data_dir / 'transcriptions.csv', 'r', encoding='utf8') as f:
+            for utterance_label in csv.DictReader(f):
+                utterance_label: dict
+                item_name = utterance_label['name']
+                item_idx = int(item_name.rsplit(DS_INDEX_SEP, maxsplit=1)[-1]) if DS_INDEX_SEP in item_name else 0
 
-            def require(attr):
-                if self.prefer_ds:
-                    value = self.load_attr_from_ds(ds_id, item_name, attr, item_idx)
-                else:
-                    value = None
-                if value is None:
-                    value = utterance_label.get(attr)
-                if value is None:
-                    raise ValueError(f'Missing required attribute {attr} of item \'{item_name}\'.')
-                return value
+                def require(attr):
+                    if self.prefer_ds:
+                        value = self.load_attr_from_ds(ds_id, item_name, attr, item_idx)
+                    else:
+                        value = None
+                    if value is None:
+                        value = utterance_label.get(attr)
+                    if value is None:
+                        raise ValueError(f'Missing required attribute {attr} of item \'{item_name}\'.')
+                    return value
 
-            temp_dict = {
-                'ds_idx': item_idx,
-                'spk_id': spk_id,
-                'wav_fn': str(raw_data_dir / 'wavs' / f'{item_name}.wav'),
-                'ph_seq': require('ph_seq').split(),
-                'ph_dur': [float(x) for x in require('ph_dur').split()]
-            }
+                temp_dict = {
+                    'ds_idx': item_idx,
+                    'spk_id': spk_id,
+                    'spk_name': self.speakers[ds_id],
+                    'wav_fn': str(raw_data_dir / 'wavs' / f'{item_name}.wav'),
+                    'ph_seq': require('ph_seq').split(),
+                    'ph_dur': [float(x) for x in require('ph_dur').split()]
+                }
 
-            assert len(temp_dict['ph_seq']) == len(temp_dict['ph_dur']), \
-                f'Lengths of ph_seq and ph_dur mismatch in \'{item_name}\'.'
+                assert len(temp_dict['ph_seq']) == len(temp_dict['ph_dur']), \
+                    f'Lengths of ph_seq and ph_dur mismatch in \'{item_name}\'.'
 
-            if hparams['predict_dur']:
-                temp_dict['ph_num'] = [int(x) for x in require('ph_num').split()]
-                assert len(temp_dict['ph_seq']) == sum(temp_dict['ph_num']), \
-                    f'Sum of ph_num does not equal length of ph_seq in \'{item_name}\'.'
+                if hparams['predict_dur']:
+                    temp_dict['ph_num'] = [int(x) for x in require('ph_num').split()]
+                    assert len(temp_dict['ph_seq']) == sum(temp_dict['ph_num']), \
+                        f'Sum of ph_num does not equal length of ph_seq in \'{item_name}\'.'
 
-            if hparams['predict_pitch']:
-                temp_dict['note_seq'] = require('note_seq').split()
-                temp_dict['note_dur'] = [float(x) for x in require('note_dur').split()]
-                assert len(temp_dict['note_seq']) == len(temp_dict['note_dur']), \
-                    f'Lengths of note_seq and note_dur mismatch in \'{item_name}\'.'
-                assert any([note != 'rest' for note in temp_dict['note_seq']]), \
-                    f'All notes are rest in \'{item_name}\'.'
+                if hparams['predict_pitch']:
+                    temp_dict['note_seq'] = require('note_seq').split()
+                    temp_dict['note_dur'] = [float(x) for x in require('note_dur').split()]
+                    assert len(temp_dict['note_seq']) == len(temp_dict['note_dur']), \
+                        f'Lengths of note_seq and note_dur mismatch in \'{item_name}\'.'
+                    assert any([note != 'rest' for note in temp_dict['note_seq']]), \
+                        f'All notes are rest in \'{item_name}\'.'
+                    if hparams['use_glide_embed']:
+                        temp_dict['note_glide'] = require('note_glide').split()
 
-            meta_data_dict[f'{ds_id}:{item_name}'] = temp_dict
+                meta_data_dict[f'{ds_id}:{item_name}'] = temp_dict
 
         self.items.update(meta_data_dict)
 
@@ -173,6 +191,35 @@ class VarianceBinarizer(BaseBinarizer):
                     pad_inches=0.25)
         print(f'| save summary to \'{filename}\'')
 
+        if self.use_glide_embed:
+            # Glide type distribution summary
+            glide_count = {
+                g: 0
+                for g in self.glide_map
+            }
+            for item_name in self.items:
+                for glide in self.items[item_name]['note_glide']:
+                    if glide == 'none' or glide not in self.glide_map:
+                        glide_count['none'] += 1
+                    else:
+                        glide_count[glide] += 1
+
+            print('===== Glide Type Distribution Summary =====')
+            for i, key in enumerate(sorted(glide_count.keys(), key=lambda k: self.glide_map[k])):
+                if i == len(glide_count) - 1:
+                    end = '\n'
+                elif i % 10 == 9:
+                    end = ',\n'
+                else:
+                    end = ', '
+                print(f'\'{key}\': {glide_count[key]}', end=end)
+
+            if any(n == 0 for _, n in glide_count.items()):
+                raise BinarizationError(
+                    f'Missing glide types in dataset: '
+                    f'{sorted([g for g, n in glide_count.items() if n == 0], key=lambda k: self.glide_map[k])}'
+                )
+
     @torch.no_grad()
     def process_item(self, item_name, meta_data, binarization_args):
         ds_id, name = item_name.split(':', maxsplit=1)
@@ -186,6 +233,7 @@ class VarianceBinarizer(BaseBinarizer):
             'name': item_name,
             'wav_fn': meta_data['wav_fn'],
             'spk_id': meta_data['spk_id'],
+            'spk_name': meta_data['spk_name'],
             'seconds': seconds,
             'length': length,
             'tokens': np.array(self.phone_encoder.encode(meta_data['ph_seq']), dtype=np.int64)
@@ -244,25 +292,41 @@ class VarianceBinarizer(BaseBinarizer):
             processed_input['midi'] = ph_midi.round().long().clamp(min=0, max=127).cpu().numpy()
 
         if hparams['predict_pitch']:
-            # Below: calculate and interpolate frame-level MIDI pitch, which is a step function curve
-            note_dur = torch.FloatTensor(meta_data['note_dur']).to(self.device)
-            mel2note = get_mel2ph_torch(
-                self.lr, note_dur, mel2ph.shape[0], self.timestep, device=self.device
+            # Below: get note sequence and interpolate rest notes
+            note_midi = np.array(
+                [(librosa.note_to_midi(n, round_midi=False) if n != 'rest' else -1) for n in meta_data['note_seq']],
+                dtype=np.float32
             )
-            note_pitch = torch.FloatTensor(
-                [(librosa.note_to_midi(n, round_midi=False) if n != 'rest' else -1) for n in meta_data['note_seq']]
-            ).to(self.device)
-            frame_midi_pitch = torch.gather(F.pad(note_pitch, [1, 0], value=0), 0, mel2note)
-            rest = (frame_midi_pitch < 0).cpu().numpy()
-            frame_midi_pitch = frame_midi_pitch.cpu().numpy()
+            note_rest = note_midi < 0
             interp_func = interpolate.interp1d(
-                np.where(~rest)[0], frame_midi_pitch[~rest],
+                np.where(~note_rest)[0], note_midi[~note_rest],
                 kind='nearest', fill_value='extrapolate'
             )
-            frame_midi_pitch[rest] = interp_func(np.where(rest)[0])
-            frame_midi_pitch = torch.from_numpy(frame_midi_pitch).to(self.device)
+            note_midi[note_rest] = interp_func(np.where(note_rest)[0])
+            processed_input['note_midi'] = note_midi
+            processed_input['note_rest'] = note_rest
+            note_midi = torch.from_numpy(note_midi).to(self.device)
 
-            # Below: smoothen the pitch step curve as the base pitch curve
+            note_dur_sec = torch.FloatTensor(meta_data['note_dur']).to(self.device)
+            note_acc = torch.round(torch.cumsum(note_dur_sec, dim=0) / self.timestep + 0.5).long()
+            note_dur = torch.diff(note_acc, dim=0, prepend=torch.LongTensor([0]).to(self.device))
+            processed_input['note_dur'] = note_dur.cpu().numpy()
+
+            mel2note = get_mel2ph_torch(
+                self.lr, note_dur_sec, mel2ph.shape[0], self.timestep, device=self.device
+            )
+            processed_input['mel2note'] = mel2note.cpu().numpy()
+
+            # Below: get ornament attributes
+            if hparams['use_glide_embed']:
+                processed_input['note_glide'] = np.array([
+                    self.glide_map.get(x, 0) for x in meta_data['note_glide']
+                ], dtype=np.int64)
+
+            # Below:
+            # 1. Get the frame-level MIDI pitch, which is a step function curve
+            # 2. smoothen the pitch step curve as the base pitch curve
+            frame_midi_pitch = torch.gather(F.pad(note_midi, [1, 0], value=0), 0, mel2note)
             global midi_smooth
             if midi_smooth is None:
                 midi_smooth = SinusoidalSmoothingConv1d(
