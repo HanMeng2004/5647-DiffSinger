@@ -1,3 +1,73 @@
+# Guideline for Easy Multi-DiffSinger
+
+This is the final project for CS5647.
+
+The model's name is Easy Multi-DiffSinger, which gives a preprocessing module of DiffSinger and enable it for multi-singer scenarios. The preprocessing module outline is shown here:
+
+<img src="https://i.ibb.co/HB6XKbs/Screenshot-2023-11-01-at-12-49-21-AM.png" alt="arch-overview" style="zoom: 60%;" />
+
+How to use it:
+
+1. Copy and paste the following command in Anacoda Powershell Prompt to create a Python 3.8 virtual environment named diffsinger and activate the environment:
+
+```bash
+conda create -n diffsinger python=3.8 -y
+conda activate diffsinger
+```
+
+2. Copy and paste the following code in Anacoda Powershell Prompt and press Enter to install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Use the `cd` command in Anacoda Powershell Prompt to enter your DiffSinger-main repository:
+
+```bash
+cd path/to/your/DiffSinger-main
+```
+
+4. Run the following command to train on the existed dataset:
+
+```bash
+python scripts/train.py --config my_config.yaml --exp_name test_multi --reset
+```
+
+5. Run the following command to inference on your audio file and lyrics:
+
+```bash
+python /preprocess/main.py 
+```
+
+6. Run the following command to inference on your music scores without **preprocessing module**:
+
+```bash
+python scripts/infer.py acoustic samples/01_xiaoyaoxian.ds --exp test_multi --spk opencpop --out zaijian/xiaoyaoxian
+```
+
+The configs are:
+
+```bash
+Options:
+  --exp EXP          Selection of model  [required]
+  --ckpt STEPS       Selection of checkpoint training steps
+  --spk TEXT         Speaker name or mix of speakers, now we support opencpop, man1 and man2
+  --out DIR          Path of the output folder
+  --title TEXT       Title of output file
+  --num INTEGER      Number of runs
+  --key INTEGER      Key transition of pitch
+  --gender FLOAT     Formant shifting (gender control)
+  --seed INTEGER     Random seed of the inference
+  --depth INTEGER    Shallow diffusion depth
+  --speedup INTEGER  Diffusion acceleration ratio
+  --mel              Save intermediate mel format instead of waveform
+  --help             Show this message and exit.
+```
+
+The original DiffSinger README.md content is as below.
+
+If you are interested in creating your own dataset, please refer to the original documentation for detailed instructions and additional information.
+
 # DiffSinger (OpenVPI maintained version)
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2105.02446)
