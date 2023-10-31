@@ -1,0 +1,120 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.13475
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.13475
+		intervals: size = 12
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.07
+				text = "SP"
+			intervals [2]:
+				xmin = 0.07
+				xmax = 0.47750000000000004
+				text = "uo"
+			intervals [3]:
+				xmin = 0.47750000000000004
+				xmax = 0.66
+				text = "h"
+			intervals [4]:
+				xmin = 0.66
+				xmax = 1.04
+				text = "e"
+			intervals [5]:
+				xmin = 1.04
+				xmax = 1.19
+				text = "n"
+			intervals [6]:
+				xmin = 1.19
+				xmax = 1.52
+				text = "i"
+			intervals [7]:
+				xmin = 1.52
+				xmax = 1.7
+				text = "sh"
+			intervals [8]:
+				xmin = 1.7
+				xmax = 2.04
+				text = "ou"
+			intervals [9]:
+				xmin = 2.04
+				xmax = 2.24
+				text = "q"
+			intervals [10]:
+				xmin = 2.24
+				xmax = 2.589999999999997
+				text = "ian"
+			intervals [11]:
+				xmin = 2.589999999999997
+				xmax = 2.77
+				text = "sh"
+			intervals [12]:
+				xmin = 2.77
+				xmax = 3.13475
+				text = "ou"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.13475
+		intervals: size = 13
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.07
+				text = "SP"
+			intervals [2]:
+				xmin = 0.07
+				xmax = 0.47750000000000004
+				text = "uo"
+			intervals [3]:
+				xmin = 0.47750000000000004
+				xmax = 0.66
+				text = "h"
+			intervals [4]:
+				xmin = 0.66
+				xmax = 1.04
+				text = "e"
+			intervals [5]:
+				xmin = 1.04
+				xmax = 1.19
+				text = "n"
+			intervals [6]:
+				xmin = 1.19
+				xmax = 1.52
+				text = "i"
+			intervals [7]:
+				xmin = 1.52
+				xmax = 1.7
+				text = "sh"
+			intervals [8]:
+				xmin = 1.7
+				xmax = 2.04
+				text = "ou"
+			intervals [9]:
+				xmin = 2.04
+				xmax = 2.24
+				text = "q"
+			intervals [10]:
+				xmin = 2.24
+				xmax = 2.3
+				text = "i"
+			intervals [11]:
+				xmin = 2.3
+				xmax = 2.589999999999997
+				text = "an"
+			intervals [12]:
+				xmin = 2.589999999999997
+				xmax = 2.77
+				text = "sh"
+			intervals [13]:
+				xmin = 2.77
+				xmax = 3.13475
+				text = "ou"

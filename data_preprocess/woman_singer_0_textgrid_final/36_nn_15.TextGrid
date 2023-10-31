@@ -1,0 +1,112 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.29881
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 2.29881
+		intervals: size = 10
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.14
+				text = "b"
+			intervals [2]:
+				xmin = 0.14
+				xmax = 0.6475000000000001
+				text = "u"
+			intervals [3]:
+				xmin = 0.6475000000000001
+				xmax = 0.8750000000000001
+				text = "iao"
+			intervals [4]:
+				xmin = 0.8750000000000001
+				xmax = 1.02
+				text = "q"
+			intervals [5]:
+				xmin = 1.02
+				xmax = 1.154999999999999
+				text = "iou"
+			intervals [6]:
+				xmin = 1.154999999999999
+				xmax = 1.3
+				text = "h"
+			intervals [7]:
+				xmin = 1.3
+				xmax = 1.6699999999999964
+				text = "uei"
+			intervals [8]:
+				xmin = 1.6699999999999964
+				xmax = 1.85
+				text = "b"
+			intervals [9]:
+				xmin = 1.85
+				xmax = 2.019999999999997
+				text = "ao"
+			intervals [10]:
+				xmin = 2.019999999999997
+				xmax = 2.29881
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 2.29881
+		intervals: size = 13
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.14
+				text = "b"
+			intervals [2]:
+				xmin = 0.14
+				xmax = 0.6475000000000001
+				text = "u"
+			intervals [3]:
+				xmin = 0.6475000000000001
+				xmax = 0.66
+				text = "i"
+			intervals [4]:
+				xmin = 0.66
+				xmax = 0.8750000000000001
+				text = "ao"
+			intervals [5]:
+				xmin = 0.8750000000000001
+				xmax = 1.02
+				text = "q"
+			intervals [6]:
+				xmin = 1.02
+				xmax = 1.03
+				text = "i"
+			intervals [7]:
+				xmin = 1.03
+				xmax = 1.154999999999999
+				text = "ou"
+			intervals [8]:
+				xmin = 1.154999999999999
+				xmax = 1.3
+				text = "h"
+			intervals [9]:
+				xmin = 1.3
+				xmax = 1.31
+				text = "u"
+			intervals [10]:
+				xmin = 1.31
+				xmax = 1.6699999999999964
+				text = "ei"
+			intervals [11]:
+				xmin = 1.6699999999999964
+				xmax = 1.85
+				text = "b"
+			intervals [12]:
+				xmin = 1.85
+				xmax = 2.019999999999997
+				text = "ao"
+			intervals [13]:
+				xmin = 2.019999999999997
+				xmax = 2.29881
+				text = "AP"

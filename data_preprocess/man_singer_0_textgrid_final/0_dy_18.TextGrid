@@ -1,0 +1,184 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 7.77869
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 7.77869
+		intervals: size = 20
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.15
+				text = "d"
+			intervals [2]:
+				xmin = 0.15
+				xmax = 0.5375000000000001
+				text = "a"
+			intervals [3]:
+				xmin = 0.5375000000000001
+				xmax = 0.9
+				text = "v"
+			intervals [4]:
+				xmin = 0.9
+				xmax = 1.02
+				text = "d"
+			intervals [5]:
+				xmin = 1.02
+				xmax = 2.17
+				text = "e"
+			intervals [6]:
+				xmin = 2.17
+				xmax = 2.4
+				text = "ch"
+			intervals [7]:
+				xmin = 2.4
+				xmax = 2.589999999999999
+				text = "i"
+			intervals [8]:
+				xmin = 2.589999999999999
+				xmax = 2.66
+				text = "b"
+			intervals [9]:
+				xmin = 2.66
+				xmax = 3.134999999999995
+				text = "ang"
+			intervals [10]:
+				xmin = 3.134999999999995
+				xmax = 3.56
+				text = "SP"
+			intervals [11]:
+				xmin = 3.56
+				xmax = 3.88
+				text = "i"
+			intervals [12]:
+				xmin = 3.88
+				xmax = 4.05
+				text = "j"
+			intervals [13]:
+				xmin = 4.05
+				xmax = 4.3
+				text = "ing"
+			intervals [14]:
+				xmin = 4.3
+				xmax = 4.48
+				text = "t"
+			intervals [15]:
+				xmin = 4.48
+				xmax = 5.09
+				text = "ai"
+			intervals [16]:
+				xmin = 5.09
+				xmax = 5.99999999999999
+				text = "l"
+			intervals [17]:
+				xmin = 5.99999999999999
+				xmax = 6.03
+				text = "iao"
+			intervals [18]:
+				xmin = 6.03
+				xmax = 6.28
+				text = "k"
+			intervals [19]:
+				xmin = 6.28
+				xmax = 7.039999999999999
+				text = "uo"
+			intervals [20]:
+				xmin = 7.039999999999999
+				xmax = 7.77869
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 7.77869
+		intervals: size = 21
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.15
+				text = "d"
+			intervals [2]:
+				xmin = 0.15
+				xmax = 0.5375000000000001
+				text = "a"
+			intervals [3]:
+				xmin = 0.5375000000000001
+				xmax = 0.9
+				text = "v"
+			intervals [4]:
+				xmin = 0.9
+				xmax = 1.02
+				text = "d"
+			intervals [5]:
+				xmin = 1.02
+				xmax = 2.17
+				text = "e"
+			intervals [6]:
+				xmin = 2.17
+				xmax = 2.4
+				text = "ch"
+			intervals [7]:
+				xmin = 2.4
+				xmax = 2.589999999999999
+				text = "i"
+			intervals [8]:
+				xmin = 2.589999999999999
+				xmax = 2.66
+				text = "b"
+			intervals [9]:
+				xmin = 2.66
+				xmax = 3.134999999999995
+				text = "ang"
+			intervals [10]:
+				xmin = 3.134999999999995
+				xmax = 3.56
+				text = "SP"
+			intervals [11]:
+				xmin = 3.56
+				xmax = 3.88
+				text = "i"
+			intervals [12]:
+				xmin = 3.88
+				xmax = 4.05
+				text = "j"
+			intervals [13]:
+				xmin = 4.05
+				xmax = 4.3
+				text = "ing"
+			intervals [14]:
+				xmin = 4.3
+				xmax = 4.48
+				text = "t"
+			intervals [15]:
+				xmin = 4.48
+				xmax = 5.09
+				text = "ai"
+			intervals [16]:
+				xmin = 5.09
+				xmax = 5.99999999999999
+				text = "l"
+			intervals [17]:
+				xmin = 5.99999999999999
+				xmax = 6.01
+				text = "i"
+			intervals [18]:
+				xmin = 6.01
+				xmax = 6.03
+				text = "ao"
+			intervals [19]:
+				xmin = 6.03
+				xmax = 6.28
+				text = "k"
+			intervals [20]:
+				xmin = 6.28
+				xmax = 7.039999999999999
+				text = "uo"
+			intervals [21]:
+				xmin = 7.039999999999999
+				xmax = 7.77869
+				text = "SP"

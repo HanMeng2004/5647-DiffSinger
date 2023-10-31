@@ -1,0 +1,116 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.5295
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.5295
+		intervals: size = 12
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.16
+				text = "SP"
+			intervals [2]:
+				xmin = 0.16
+				xmax = 0.18
+				text = "ie"
+			intervals [3]:
+				xmin = 0.18
+				xmax = 0.29
+				text = "d"
+			intervals [4]:
+				xmin = 0.29
+				xmax = 0.39
+				text = "i"
+			intervals [5]:
+				xmin = 0.39
+				xmax = 0.51
+				text = "b"
+			intervals [6]:
+				xmin = 0.51
+				xmax = 0.59
+				text = "u"
+			intervals [7]:
+				xmin = 0.59
+				xmax = 0.72
+				text = "g"
+			intervals [8]:
+				xmin = 0.72
+				xmax = 0.8575
+				text = "uo"
+			intervals [9]:
+				xmin = 0.8575
+				xmax = 1.109999999999999
+				text = "ie"
+			intervals [10]:
+				xmin = 1.109999999999999
+				xmax = 1.21
+				text = "l"
+			intervals [11]:
+				xmin = 1.21
+				xmax = 3.2299999999999995
+				text = "i"
+			intervals [12]:
+				xmin = 3.2299999999999995
+				xmax = 3.5295
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.5295
+		intervals: size = 12
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.16
+				text = "SP"
+			intervals [2]:
+				xmin = 0.16
+				xmax = 0.18
+				text = "ie"
+			intervals [3]:
+				xmin = 0.18
+				xmax = 0.29
+				text = "d"
+			intervals [4]:
+				xmin = 0.29
+				xmax = 0.39
+				text = "i"
+			intervals [5]:
+				xmin = 0.39
+				xmax = 0.51
+				text = "b"
+			intervals [6]:
+				xmin = 0.51
+				xmax = 0.59
+				text = "u"
+			intervals [7]:
+				xmin = 0.59
+				xmax = 0.72
+				text = "g"
+			intervals [8]:
+				xmin = 0.72
+				xmax = 0.8575
+				text = "uo"
+			intervals [9]:
+				xmin = 0.8575
+				xmax = 1.109999999999999
+				text = "ie"
+			intervals [10]:
+				xmin = 1.109999999999999
+				xmax = 1.21
+				text = "l"
+			intervals [11]:
+				xmin = 1.21
+				xmax = 3.2299999999999995
+				text = "i"
+			intervals [12]:
+				xmin = 3.2299999999999995
+				xmax = 3.5295
+				text = "SP"

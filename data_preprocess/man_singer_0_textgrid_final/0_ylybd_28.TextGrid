@@ -1,0 +1,104 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.99388
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.99388
+		intervals: size = 10
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.16
+				text = "m"
+			intervals [2]:
+				xmin = 0.16
+				xmax = 0.44
+				text = "ei"
+			intervals [3]:
+				xmin = 0.44
+				xmax = 0.62
+				text = "b"
+			intervals [4]:
+				xmin = 0.62
+				xmax = 1.0099999999999998
+				text = "i"
+			intervals [5]:
+				xmin = 1.0099999999999998
+				xmax = 1.9999999999999898
+				text = "iao"
+			intervals [6]:
+				xmin = 1.9999999999999898
+				xmax = 2.18
+				text = "sh"
+			intervals [7]:
+				xmin = 2.18
+				xmax = 2.5199999999999974
+				text = "ang"
+			intervals [8]:
+				xmin = 2.5199999999999974
+				xmax = 2.6
+				text = "b"
+			intervals [9]:
+				xmin = 2.6
+				xmax = 3.4899999999999993
+				text = "ei"
+			intervals [10]:
+				xmin = 3.4899999999999993
+				xmax = 3.99388
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.99388
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.16
+				text = "m"
+			intervals [2]:
+				xmin = 0.16
+				xmax = 0.44
+				text = "ei"
+			intervals [3]:
+				xmin = 0.44
+				xmax = 0.62
+				text = "b"
+			intervals [4]:
+				xmin = 0.62
+				xmax = 1.0099999999999998
+				text = "i"
+			intervals [5]:
+				xmin = 1.0099999999999998
+				xmax = 1.03
+				text = "i"
+			intervals [6]:
+				xmin = 1.03
+				xmax = 1.9999999999999898
+				text = "ao"
+			intervals [7]:
+				xmin = 1.9999999999999898
+				xmax = 2.18
+				text = "sh"
+			intervals [8]:
+				xmin = 2.18
+				xmax = 2.5199999999999974
+				text = "ang"
+			intervals [9]:
+				xmin = 2.5199999999999974
+				xmax = 2.6
+				text = "b"
+			intervals [10]:
+				xmin = 2.6
+				xmax = 3.4899999999999993
+				text = "ei"
+			intervals [11]:
+				xmin = 3.4899999999999993
+				xmax = 3.99388
+				text = "SP"

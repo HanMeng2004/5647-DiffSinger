@@ -1,0 +1,236 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 4.04031
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 4.04031
+		intervals: size = 26
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.26750000000000007
+				text = "x"
+			intervals [2]:
+				xmin = 0.26750000000000007
+				xmax = 0.3175
+				text = "iang"
+			intervals [3]:
+				xmin = 0.3175
+				xmax = 0.44
+				text = "h"
+			intervals [4]:
+				xmin = 0.44
+				xmax = 0.6375000000000001
+				text = "e"
+			intervals [5]:
+				xmin = 0.6375000000000001
+				xmax = 0.71
+				text = "n"
+			intervals [6]:
+				xmin = 0.71
+				xmax = 0.79
+				text = "i"
+			intervals [7]:
+				xmin = 0.79
+				xmax = 0.91
+				text = "SP"
+			intervals [8]:
+				xmin = 0.91
+				xmax = 0.98
+				text = "p"
+			intervals [9]:
+				xmin = 0.98
+				xmax = 1.3299999999999965
+				text = "u"
+			intervals [10]:
+				xmin = 1.3299999999999965
+				xmax = 1.45
+				text = "zh"
+			intervals [11]:
+				xmin = 1.45
+				xmax = 1.5899999999999999
+				text = "i"
+			intervals [12]:
+				xmin = 1.5899999999999999
+				xmax = 1.71
+				text = "b"
+			intervals [13]:
+				xmin = 1.71
+				xmax = 1.8
+				text = "i"
+			intervals [14]:
+				xmin = 1.8
+				xmax = 1.98
+				text = "x"
+			intervals [15]:
+				xmin = 1.98
+				xmax = 2.13
+				text = "ie"
+			intervals [16]:
+				xmin = 2.13
+				xmax = 2.32
+				text = "v"
+			intervals [17]:
+				xmin = 2.32
+				xmax = 2.51
+				text = "sh"
+			intervals [18]:
+				xmin = 2.51
+				xmax = 2.6799999999999984
+				text = "eng"
+			intervals [19]:
+				xmin = 2.6799999999999984
+				xmax = 2.73
+				text = "d"
+			intervals [20]:
+				xmin = 2.73
+				xmax = 2.7799999999999994
+				text = "e"
+			intervals [21]:
+				xmin = 2.7799999999999994
+				xmax = 2.96
+				text = "SP"
+			intervals [22]:
+				xmin = 2.96
+				xmax = 2.99
+				text = "p"
+			intervals [23]:
+				xmin = 2.99
+				xmax = 3.3399999999999963
+				text = "ian"
+			intervals [24]:
+				xmin = 3.3399999999999963
+				xmax = 3.43
+				text = "zh"
+			intervals [25]:
+				xmin = 3.43
+				xmax = 3.6899999999999986
+				text = "ang"
+			intervals [26]:
+				xmin = 3.6899999999999986
+				xmax = 4.04031
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 4.04031
+		intervals: size = 28
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.26750000000000007
+				text = "x"
+			intervals [2]:
+				xmin = 0.26750000000000007
+				xmax = 0.28
+				text = "i"
+			intervals [3]:
+				xmin = 0.28
+				xmax = 0.3175
+				text = "ang"
+			intervals [4]:
+				xmin = 0.3175
+				xmax = 0.44
+				text = "h"
+			intervals [5]:
+				xmin = 0.44
+				xmax = 0.6375000000000001
+				text = "e"
+			intervals [6]:
+				xmin = 0.6375000000000001
+				xmax = 0.71
+				text = "n"
+			intervals [7]:
+				xmin = 0.71
+				xmax = 0.79
+				text = "i"
+			intervals [8]:
+				xmin = 0.79
+				xmax = 0.91
+				text = "SP"
+			intervals [9]:
+				xmin = 0.91
+				xmax = 0.98
+				text = "spn"
+			intervals [10]:
+				xmin = 0.98
+				xmax = 1.3299999999999965
+				text = "u"
+			intervals [11]:
+				xmin = 1.3299999999999965
+				xmax = 1.45
+				text = "zh"
+			intervals [12]:
+				xmin = 1.45
+				xmax = 1.5899999999999999
+				text = "i"
+			intervals [13]:
+				xmin = 1.5899999999999999
+				xmax = 1.71
+				text = "b"
+			intervals [14]:
+				xmin = 1.71
+				xmax = 1.8
+				text = "i"
+			intervals [15]:
+				xmin = 1.8
+				xmax = 1.98
+				text = "x"
+			intervals [16]:
+				xmin = 1.98
+				xmax = 2.13
+				text = "ie"
+			intervals [17]:
+				xmin = 2.13
+				xmax = 2.32
+				text = "v"
+			intervals [18]:
+				xmin = 2.32
+				xmax = 2.51
+				text = "sh"
+			intervals [19]:
+				xmin = 2.51
+				xmax = 2.6799999999999984
+				text = "eng"
+			intervals [20]:
+				xmin = 2.6799999999999984
+				xmax = 2.73
+				text = "d"
+			intervals [21]:
+				xmin = 2.73
+				xmax = 2.7799999999999994
+				text = "e"
+			intervals [22]:
+				xmin = 2.7799999999999994
+				xmax = 2.96
+				text = "SP"
+			intervals [23]:
+				xmin = 2.96
+				xmax = 2.99
+				text = "spn"
+			intervals [24]:
+				xmin = 2.99
+				xmax = 3.01
+				text = "i"
+			intervals [25]:
+				xmin = 3.01
+				xmax = 3.3399999999999963
+				text = "an"
+			intervals [26]:
+				xmin = 3.3399999999999963
+				xmax = 3.43
+				text = "zh"
+			intervals [27]:
+				xmin = 3.43
+				xmax = 3.6899999999999986
+				text = "ang"
+			intervals [28]:
+				xmin = 3.6899999999999986
+				xmax = 4.04031
+				text = "AP"

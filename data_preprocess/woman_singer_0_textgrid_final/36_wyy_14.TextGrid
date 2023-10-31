@@ -1,0 +1,116 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.78644
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 2.78644
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.07
+				text = "SP"
+			intervals [2]:
+				xmin = 0.07
+				xmax = 0.17
+				text = "j"
+			intervals [3]:
+				xmin = 0.17
+				xmax = 0.3375000000000001
+				text = "iou"
+			intervals [4]:
+				xmin = 0.3375000000000001
+				xmax = 0.55
+				text = "s"
+			intervals [5]:
+				xmin = 0.55
+				xmax = 0.575
+				text = "uan"
+			intervals [6]:
+				xmin = 0.575
+				xmax = 0.62
+				text = "d"
+			intervals [7]:
+				xmin = 0.62
+				xmax = 0.63
+				text = "uo"
+			intervals [8]:
+				xmin = 0.63
+				xmax = 2.2599999999999865
+				text = "i"
+			intervals [9]:
+				xmin = 2.2599999999999865
+				xmax = 2.32
+				text = "m"
+			intervals [10]:
+				xmin = 2.32
+				xmax = 2.514999999999996
+				text = "iao"
+			intervals [11]:
+				xmin = 2.514999999999996
+				xmax = 2.78644
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 2.78644
+		intervals: size = 13
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.07
+				text = "SP"
+			intervals [2]:
+				xmin = 0.07
+				xmax = 0.17
+				text = "j"
+			intervals [3]:
+				xmin = 0.17
+				xmax = 0.19
+				text = "i"
+			intervals [4]:
+				xmin = 0.19
+				xmax = 0.3375000000000001
+				text = "ou"
+			intervals [5]:
+				xmin = 0.3375000000000001
+				xmax = 0.55
+				text = "s"
+			intervals [6]:
+				xmin = 0.55
+				xmax = 0.575
+				text = "uan"
+			intervals [7]:
+				xmin = 0.575
+				xmax = 0.62
+				text = "d"
+			intervals [8]:
+				xmin = 0.62
+				xmax = 0.63
+				text = "uo"
+			intervals [9]:
+				xmin = 0.63
+				xmax = 2.2599999999999865
+				text = "i"
+			intervals [10]:
+				xmin = 2.2599999999999865
+				xmax = 2.32
+				text = "m"
+			intervals [11]:
+				xmin = 2.32
+				xmax = 2.33
+				text = "i"
+			intervals [12]:
+				xmin = 2.33
+				xmax = 2.514999999999996
+				text = "ao"
+			intervals [13]:
+				xmin = 2.514999999999996
+				xmax = 2.78644
+				text = "AP"

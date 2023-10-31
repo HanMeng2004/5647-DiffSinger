@@ -1,0 +1,108 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.39012
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.39012
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.11
+				text = "r"
+			intervals [2]:
+				xmin = 0.11
+				xmax = 0.19
+				text = "u"
+			intervals [3]:
+				xmin = 0.19
+				xmax = 0.31
+				text = "g"
+			intervals [4]:
+				xmin = 0.31
+				xmax = 0.32
+				text = "uo"
+			intervals [5]:
+				xmin = 0.32
+				xmax = 0.8075000000000001
+				text = "uo"
+			intervals [6]:
+				xmin = 0.8075000000000001
+				xmax = 0.97
+				text = "b"
+			intervals [7]:
+				xmin = 0.97
+				xmax = 1.12
+				text = "u"
+			intervals [8]:
+				xmin = 1.12
+				xmax = 1.33
+				text = "sh"
+			intervals [9]:
+				xmin = 1.33
+				xmax = 1.5699999999999978
+				text = "i"
+			intervals [10]:
+				xmin = 1.5699999999999978
+				xmax = 2.754999999999997
+				text = "uo"
+			intervals [11]:
+				xmin = 2.754999999999997
+				xmax = 3.39012
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.39012
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.11
+				text = "r"
+			intervals [2]:
+				xmin = 0.11
+				xmax = 0.19
+				text = "u"
+			intervals [3]:
+				xmin = 0.19
+				xmax = 0.31
+				text = "g"
+			intervals [4]:
+				xmin = 0.31
+				xmax = 0.32
+				text = "uo"
+			intervals [5]:
+				xmin = 0.32
+				xmax = 0.8075000000000001
+				text = "uo"
+			intervals [6]:
+				xmin = 0.8075000000000001
+				xmax = 0.97
+				text = "b"
+			intervals [7]:
+				xmin = 0.97
+				xmax = 1.12
+				text = "u"
+			intervals [8]:
+				xmin = 1.12
+				xmax = 1.33
+				text = "sh"
+			intervals [9]:
+				xmin = 1.33
+				xmax = 1.5699999999999978
+				text = "i"
+			intervals [10]:
+				xmin = 1.5699999999999978
+				xmax = 2.754999999999997
+				text = "uo"
+			intervals [11]:
+				xmin = 2.754999999999997
+				xmax = 3.39012
+				text = "SP"

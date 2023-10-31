@@ -1,0 +1,116 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.18119
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.18119
+		intervals: size = 12
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.26
+				text = "ai"
+			intervals [2]:
+				xmin = 0.26
+				xmax = 0.44
+				text = "m"
+			intervals [3]:
+				xmin = 0.44
+				xmax = 0.96
+				text = "u"
+			intervals [4]:
+				xmin = 0.96
+				xmax = 1.08
+				text = "n"
+			intervals [5]:
+				xmin = 1.08
+				xmax = 1.22
+				text = "i"
+			intervals [6]:
+				xmin = 1.22
+				xmax = 1.35
+				text = "d"
+			intervals [7]:
+				xmin = 1.35
+				xmax = 1.84
+				text = "e"
+			intervals [8]:
+				xmin = 1.84
+				xmax = 1.99
+				text = "m"
+			intervals [9]:
+				xmin = 1.99
+				xmax = 2.2
+				text = "ei"
+			intervals [10]:
+				xmin = 2.2
+				xmax = 2.33
+				text = "l"
+			intervals [11]:
+				xmin = 2.33
+				xmax = 2.7299999999999986
+				text = "i"
+			intervals [12]:
+				xmin = 2.7299999999999986
+				xmax = 3.18119
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.18119
+		intervals: size = 12
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.26
+				text = "ai"
+			intervals [2]:
+				xmin = 0.26
+				xmax = 0.44
+				text = "m"
+			intervals [3]:
+				xmin = 0.44
+				xmax = 0.96
+				text = "u"
+			intervals [4]:
+				xmin = 0.96
+				xmax = 1.08
+				text = "n"
+			intervals [5]:
+				xmin = 1.08
+				xmax = 1.22
+				text = "i"
+			intervals [6]:
+				xmin = 1.22
+				xmax = 1.35
+				text = "d"
+			intervals [7]:
+				xmin = 1.35
+				xmax = 1.84
+				text = "e"
+			intervals [8]:
+				xmin = 1.84
+				xmax = 1.99
+				text = "m"
+			intervals [9]:
+				xmin = 1.99
+				xmax = 2.2
+				text = "ei"
+			intervals [10]:
+				xmin = 2.2
+				xmax = 2.33
+				text = "l"
+			intervals [11]:
+				xmin = 2.33
+				xmax = 2.7299999999999986
+				text = "i"
+			intervals [12]:
+				xmin = 2.7299999999999986
+				xmax = 3.18119
+				text = "SP"

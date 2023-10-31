@@ -1,0 +1,104 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.531
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 2.531
+		intervals: size = 10
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.3
+				text = "ai"
+			intervals [2]:
+				xmin = 0.3
+				xmax = 0.47
+				text = "sh"
+			intervals [3]:
+				xmin = 0.47
+				xmax = 0.48
+				text = "i"
+			intervals [4]:
+				xmin = 0.48
+				xmax = 0.7
+				text = "i"
+			intervals [5]:
+				xmin = 0.7
+				xmax = 0.85
+				text = "zh"
+			intervals [6]:
+				xmin = 0.85
+				xmax = 0.97
+				text = "ong"
+			intervals [7]:
+				xmin = 0.97
+				xmax = 1.18
+				text = "x"
+			intervals [8]:
+				xmin = 1.18
+				xmax = 1.689999999999998
+				text = "in"
+			intervals [9]:
+				xmin = 1.689999999999998
+				xmax = 2.124999999999991
+				text = "iang"
+			intervals [10]:
+				xmin = 2.124999999999991
+				xmax = 2.531
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 2.531
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.3
+				text = "ai"
+			intervals [2]:
+				xmin = 0.3
+				xmax = 0.47
+				text = "sh"
+			intervals [3]:
+				xmin = 0.47
+				xmax = 0.48
+				text = "i"
+			intervals [4]:
+				xmin = 0.48
+				xmax = 0.7
+				text = "i"
+			intervals [5]:
+				xmin = 0.7
+				xmax = 0.85
+				text = "zh"
+			intervals [6]:
+				xmin = 0.85
+				xmax = 0.97
+				text = "ong"
+			intervals [7]:
+				xmin = 0.97
+				xmax = 1.18
+				text = "x"
+			intervals [8]:
+				xmin = 1.18
+				xmax = 1.689999999999998
+				text = "in"
+			intervals [9]:
+				xmin = 1.689999999999998
+				xmax = 1.7
+				text = "i"
+			intervals [10]:
+				xmin = 1.7
+				xmax = 2.124999999999991
+				text = "ang"
+			intervals [11]:
+				xmin = 2.124999999999991
+				xmax = 2.531
+				text = "SP"

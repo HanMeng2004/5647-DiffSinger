@@ -1,0 +1,108 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.85456
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.85456
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.18
+				text = "z"
+			intervals [2]:
+				xmin = 0.18
+				xmax = 0.6175000000000002
+				text = "ai"
+			intervals [3]:
+				xmin = 0.6175000000000002
+				xmax = 0.85
+				text = "x"
+			intervals [4]:
+				xmin = 0.85
+				xmax = 1.1499999999999984
+				text = "in"
+			intervals [5]:
+				xmin = 1.1499999999999984
+				xmax = 1.22
+				text = "l"
+			intervals [6]:
+				xmin = 1.22
+				xmax = 1.5899999999999999
+				text = "i"
+			intervals [7]:
+				xmin = 1.5899999999999999
+				xmax = 1.9
+				text = "q"
+			intervals [8]:
+				xmin = 1.9
+				xmax = 2.5724999999999993
+				text = "ing"
+			intervals [9]:
+				xmin = 2.5724999999999993
+				xmax = 2.9
+				text = "x"
+			intervals [10]:
+				xmin = 2.9
+				xmax = 3.4749999999999996
+				text = "i"
+			intervals [11]:
+				xmin = 3.4749999999999996
+				xmax = 3.85456
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.85456
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.18
+				text = "z"
+			intervals [2]:
+				xmin = 0.18
+				xmax = 0.6175000000000002
+				text = "ai"
+			intervals [3]:
+				xmin = 0.6175000000000002
+				xmax = 0.85
+				text = "x"
+			intervals [4]:
+				xmin = 0.85
+				xmax = 1.1499999999999984
+				text = "in"
+			intervals [5]:
+				xmin = 1.1499999999999984
+				xmax = 1.22
+				text = "l"
+			intervals [6]:
+				xmin = 1.22
+				xmax = 1.5899999999999999
+				text = "i"
+			intervals [7]:
+				xmin = 1.5899999999999999
+				xmax = 1.9
+				text = "q"
+			intervals [8]:
+				xmin = 1.9
+				xmax = 2.5724999999999993
+				text = "ing"
+			intervals [9]:
+				xmin = 2.5724999999999993
+				xmax = 2.9
+				text = "x"
+			intervals [10]:
+				xmin = 2.9
+				xmax = 3.4749999999999996
+				text = "i"
+			intervals [11]:
+				xmin = 3.4749999999999996
+				xmax = 3.85456
+				text = "AP"

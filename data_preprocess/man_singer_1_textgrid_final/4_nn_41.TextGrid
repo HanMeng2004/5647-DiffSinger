@@ -1,0 +1,108 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.34525
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 2.34525
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.14
+				text = "z"
+			intervals [2]:
+				xmin = 0.14
+				xmax = 0.5375000000000001
+				text = "i"
+			intervals [3]:
+				xmin = 0.5375000000000001
+				xmax = 0.71
+				text = "x"
+			intervals [4]:
+				xmin = 0.71
+				xmax = 0.85
+				text = "in"
+			intervals [5]:
+				xmin = 0.85
+				xmax = 0.99
+				text = "x"
+			intervals [6]:
+				xmin = 0.99
+				xmax = 1.199999999999999
+				text = "in"
+			intervals [7]:
+				xmin = 1.199999999999999
+				xmax = 1.26
+				text = "b"
+			intervals [8]:
+				xmin = 1.26
+				xmax = 1.69
+				text = "u"
+			intervals [9]:
+				xmin = 1.69
+				xmax = 1.81
+				text = "g"
+			intervals [10]:
+				xmin = 1.81
+				xmax = 2.0749999999999984
+				text = "ao"
+			intervals [11]:
+				xmin = 2.0749999999999984
+				xmax = 2.34525
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 2.34525
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.14
+				text = "z"
+			intervals [2]:
+				xmin = 0.14
+				xmax = 0.5375000000000001
+				text = "i"
+			intervals [3]:
+				xmin = 0.5375000000000001
+				xmax = 0.71
+				text = "x"
+			intervals [4]:
+				xmin = 0.71
+				xmax = 0.85
+				text = "in"
+			intervals [5]:
+				xmin = 0.85
+				xmax = 0.99
+				text = "x"
+			intervals [6]:
+				xmin = 0.99
+				xmax = 1.199999999999999
+				text = "in"
+			intervals [7]:
+				xmin = 1.199999999999999
+				xmax = 1.26
+				text = "b"
+			intervals [8]:
+				xmin = 1.26
+				xmax = 1.69
+				text = "u"
+			intervals [9]:
+				xmin = 1.69
+				xmax = 1.81
+				text = "g"
+			intervals [10]:
+				xmin = 1.81
+				xmax = 2.0749999999999984
+				text = "ao"
+			intervals [11]:
+				xmin = 2.0749999999999984
+				xmax = 2.34525
+				text = "AP"

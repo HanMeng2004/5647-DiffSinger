@@ -1,0 +1,128 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 4.08675
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 4.08675
+		intervals: size = 13
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.15
+				text = "d"
+			intervals [2]:
+				xmin = 0.15
+				xmax = 0.4875000000000001
+				text = "ang"
+			intervals [3]:
+				xmin = 0.4875000000000001
+				xmax = 0.67
+				text = "ch"
+			intervals [4]:
+				xmin = 0.67
+				xmax = 0.9875
+				text = "u"
+			intervals [5]:
+				xmin = 0.9875
+				xmax = 1.1
+				text = "n"
+			intervals [6]:
+				xmin = 1.1
+				xmax = 1.3999999999999997
+				text = "ei"
+			intervals [7]:
+				xmin = 1.3999999999999997
+				xmax = 1.56
+				text = "x"
+			intervals [8]:
+				xmin = 1.56
+				xmax = 2.209999999999994
+				text = "ie"
+			intervals [9]:
+				xmin = 2.209999999999994
+				xmax = 2.24
+				text = "uen"
+			intervals [10]:
+				xmin = 2.24
+				xmax = 2.56
+				text = "r"
+			intervals [11]:
+				xmin = 2.56
+				xmax = 3.214999999999999
+				text = "ou"
+			intervals [12]:
+				xmin = 3.214999999999999
+				xmax = 3.339999999999997
+				text = "SP"
+			intervals [13]:
+				xmin = 3.339999999999997
+				xmax = 4.08675
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 4.08675
+		intervals: size = 14
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.15
+				text = "d"
+			intervals [2]:
+				xmin = 0.15
+				xmax = 0.4875000000000001
+				text = "ang"
+			intervals [3]:
+				xmin = 0.4875000000000001
+				xmax = 0.67
+				text = "ch"
+			intervals [4]:
+				xmin = 0.67
+				xmax = 0.9875
+				text = "u"
+			intervals [5]:
+				xmin = 0.9875
+				xmax = 1.1
+				text = "n"
+			intervals [6]:
+				xmin = 1.1
+				xmax = 1.3999999999999997
+				text = "ei"
+			intervals [7]:
+				xmin = 1.3999999999999997
+				xmax = 1.56
+				text = "x"
+			intervals [8]:
+				xmin = 1.56
+				xmax = 2.209999999999994
+				text = "ie"
+			intervals [9]:
+				xmin = 2.209999999999994
+				xmax = 2.22
+				text = "u"
+			intervals [10]:
+				xmin = 2.22
+				xmax = 2.24
+				text = "en"
+			intervals [11]:
+				xmin = 2.24
+				xmax = 2.56
+				text = "r"
+			intervals [12]:
+				xmin = 2.56
+				xmax = 3.214999999999999
+				text = "ou"
+			intervals [13]:
+				xmin = 3.214999999999999
+				xmax = 3.339999999999997
+				text = "SP"
+			intervals [14]:
+				xmin = 3.339999999999997
+				xmax = 4.08675
+				text = "AP"

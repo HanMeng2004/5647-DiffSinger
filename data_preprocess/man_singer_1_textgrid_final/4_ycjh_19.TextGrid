@@ -1,0 +1,108 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.83288
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 2.83288
+		intervals: size = 10
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.4475000000000001
+				text = "x"
+			intervals [2]:
+				xmin = 0.4475000000000001
+				xmax = 0.58
+				text = "iang"
+			intervals [3]:
+				xmin = 0.58
+				xmax = 0.77
+				text = "k"
+			intervals [4]:
+				xmin = 0.77
+				xmax = 0.97
+				text = "an"
+			intervals [5]:
+				xmin = 0.97
+				xmax = 1.29
+				text = "n"
+			intervals [6]:
+				xmin = 1.29
+				xmax = 1.46
+				text = "i"
+			intervals [7]:
+				xmin = 1.46
+				xmax = 2.1299999999999955
+				text = "x"
+			intervals [8]:
+				xmin = 2.1299999999999955
+				xmax = 2.2199999999999984
+				text = "iao"
+			intervals [9]:
+				xmin = 2.2199999999999984
+				xmax = 2.5299999999999927
+				text = "SP"
+			intervals [10]:
+				xmin = 2.5299999999999927
+				xmax = 2.83288
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 2.83288
+		intervals: size = 12
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.4475000000000001
+				text = "x"
+			intervals [2]:
+				xmin = 0.4475000000000001
+				xmax = 0.46
+				text = "i"
+			intervals [3]:
+				xmin = 0.46
+				xmax = 0.58
+				text = "ang"
+			intervals [4]:
+				xmin = 0.58
+				xmax = 0.77
+				text = "k"
+			intervals [5]:
+				xmin = 0.77
+				xmax = 0.97
+				text = "an"
+			intervals [6]:
+				xmin = 0.97
+				xmax = 1.29
+				text = "n"
+			intervals [7]:
+				xmin = 1.29
+				xmax = 1.46
+				text = "i"
+			intervals [8]:
+				xmin = 1.46
+				xmax = 2.1299999999999955
+				text = "x"
+			intervals [9]:
+				xmin = 2.1299999999999955
+				xmax = 2.14
+				text = "i"
+			intervals [10]:
+				xmin = 2.14
+				xmax = 2.2199999999999984
+				text = "ao"
+			intervals [11]:
+				xmin = 2.2199999999999984
+				xmax = 2.5299999999999927
+				text = "SP"
+			intervals [12]:
+				xmin = 2.5299999999999927
+				xmax = 2.83288
+				text = "AP"

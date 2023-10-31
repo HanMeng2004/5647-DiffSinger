@@ -1,0 +1,104 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.92575
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 2.92575
+		intervals: size = 10
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.12
+				text = "SP"
+			intervals [2]:
+				xmin = 0.12
+				xmax = 0.35000000000000014
+				text = "uo"
+			intervals [3]:
+				xmin = 0.35000000000000014
+				xmax = 0.41
+				text = "SP"
+			intervals [4]:
+				xmin = 0.41
+				xmax = 0.8775000000000002
+				text = "van"
+			intervals [5]:
+				xmin = 0.8775000000000002
+				xmax = 1.229999999999998
+				text = "i"
+			intervals [6]:
+				xmin = 1.229999999999998
+				xmax = 1.43
+				text = "SP"
+			intervals [7]:
+				xmin = 1.43
+				xmax = 2.0499999999999936
+				text = "uei"
+			intervals [8]:
+				xmin = 2.0499999999999936
+				xmax = 2.38
+				text = "n"
+			intervals [9]:
+				xmin = 2.38
+				xmax = 2.5449999999999995
+				text = "i"
+			intervals [10]:
+				xmin = 2.5449999999999995
+				xmax = 2.92575
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 2.92575
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.12
+				text = "SP"
+			intervals [2]:
+				xmin = 0.12
+				xmax = 0.35000000000000014
+				text = "uo"
+			intervals [3]:
+				xmin = 0.35000000000000014
+				xmax = 0.41
+				text = "SP"
+			intervals [4]:
+				xmin = 0.41
+				xmax = 0.8775000000000002
+				text = "spn"
+			intervals [5]:
+				xmin = 0.8775000000000002
+				xmax = 1.229999999999998
+				text = "i"
+			intervals [6]:
+				xmin = 1.229999999999998
+				xmax = 1.43
+				text = "SP"
+			intervals [7]:
+				xmin = 1.43
+				xmax = 1.44
+				text = "u"
+			intervals [8]:
+				xmin = 1.44
+				xmax = 2.0499999999999936
+				text = "ei"
+			intervals [9]:
+				xmin = 2.0499999999999936
+				xmax = 2.38
+				text = "n"
+			intervals [10]:
+				xmin = 2.38
+				xmax = 2.5449999999999995
+				text = "i"
+			intervals [11]:
+				xmin = 2.5449999999999995
+				xmax = 2.92575
+				text = "AP"

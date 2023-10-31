@@ -1,0 +1,104 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.59912
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.59912
+		intervals: size = 10
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.09
+				text = "SP"
+			intervals [2]:
+				xmin = 0.09
+				xmax = 0.30750000000000005
+				text = "iong"
+			intervals [3]:
+				xmin = 0.30750000000000005
+				xmax = 0.7475000000000002
+				text = "van"
+			intervals [4]:
+				xmin = 0.7475000000000002
+				xmax = 0.84
+				text = "d"
+			intervals [5]:
+				xmin = 0.84
+				xmax = 1.2649999999999997
+				text = "e"
+			intervals [6]:
+				xmin = 1.2649999999999997
+				xmax = 1.869999999999998
+				text = "ai"
+			intervals [7]:
+				xmin = 1.869999999999998
+				xmax = 2.7649999999999975
+				text = "uo"
+			intervals [8]:
+				xmin = 2.7649999999999975
+				xmax = 3.059999999999992
+				text = "SP"
+			intervals [9]:
+				xmin = 3.059999999999992
+				xmax = 3.5449999999999826
+				text = "AP"
+			intervals [10]:
+				xmin = 3.5449999999999826
+				xmax = 3.59912
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.59912
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.09
+				text = "SP"
+			intervals [2]:
+				xmin = 0.09
+				xmax = 0.1
+				text = "i"
+			intervals [3]:
+				xmin = 0.1
+				xmax = 0.30750000000000005
+				text = "ong"
+			intervals [4]:
+				xmin = 0.30750000000000005
+				xmax = 0.7475000000000002
+				text = "spn"
+			intervals [5]:
+				xmin = 0.7475000000000002
+				xmax = 0.84
+				text = "d"
+			intervals [6]:
+				xmin = 0.84
+				xmax = 1.2649999999999997
+				text = "e"
+			intervals [7]:
+				xmin = 1.2649999999999997
+				xmax = 1.869999999999998
+				text = "ai"
+			intervals [8]:
+				xmin = 1.869999999999998
+				xmax = 2.7649999999999975
+				text = "uo"
+			intervals [9]:
+				xmin = 2.7649999999999975
+				xmax = 3.059999999999992
+				text = "SP"
+			intervals [10]:
+				xmin = 3.059999999999992
+				xmax = 3.5449999999999826
+				text = "AP"
+			intervals [11]:
+				xmin = 3.5449999999999826
+				xmax = 3.59912
+				text = "SP"

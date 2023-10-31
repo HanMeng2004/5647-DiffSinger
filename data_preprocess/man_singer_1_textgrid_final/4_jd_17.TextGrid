@@ -1,0 +1,104 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.71525
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 3.71525
+		intervals: size = 10
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.28
+				text = "SP"
+			intervals [2]:
+				xmin = 0.28
+				xmax = 0.43750000000000006
+				text = "iong"
+			intervals [3]:
+				xmin = 0.43750000000000006
+				xmax = 0.9275000000000002
+				text = "van"
+			intervals [4]:
+				xmin = 0.9275000000000002
+				xmax = 1.02
+				text = "d"
+			intervals [5]:
+				xmin = 1.02
+				xmax = 1.41
+				text = "e"
+			intervals [6]:
+				xmin = 1.41
+				xmax = 1.42
+				text = "ai"
+			intervals [7]:
+				xmin = 1.42
+				xmax = 2.01
+				text = "SP"
+			intervals [8]:
+				xmin = 2.01
+				xmax = 2.8899999999999983
+				text = "uo"
+			intervals [9]:
+				xmin = 2.8899999999999983
+				xmax = 3.1099999999999945
+				text = "SP"
+			intervals [10]:
+				xmin = 3.1099999999999945
+				xmax = 3.71525
+				text = "AP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 3.71525
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.28
+				text = "SP"
+			intervals [2]:
+				xmin = 0.28
+				xmax = 0.29
+				text = "i"
+			intervals [3]:
+				xmin = 0.29
+				xmax = 0.43750000000000006
+				text = "ong"
+			intervals [4]:
+				xmin = 0.43750000000000006
+				xmax = 0.9275000000000002
+				text = "spn"
+			intervals [5]:
+				xmin = 0.9275000000000002
+				xmax = 1.02
+				text = "d"
+			intervals [6]:
+				xmin = 1.02
+				xmax = 1.41
+				text = "e"
+			intervals [7]:
+				xmin = 1.41
+				xmax = 1.42
+				text = "ai"
+			intervals [8]:
+				xmin = 1.42
+				xmax = 2.01
+				text = "SP"
+			intervals [9]:
+				xmin = 2.01
+				xmax = 2.8899999999999983
+				text = "uo"
+			intervals [10]:
+				xmin = 2.8899999999999983
+				xmax = 3.1099999999999945
+				text = "SP"
+			intervals [11]:
+				xmin = 3.1099999999999945
+				xmax = 3.71525
+				text = "AP"

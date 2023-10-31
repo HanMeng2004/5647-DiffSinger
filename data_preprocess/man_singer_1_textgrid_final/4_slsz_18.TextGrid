@@ -1,0 +1,188 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 6.73381
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 6.73381
+		intervals: size = 20
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.2975000000000001
+				text = "zh"
+			intervals [2]:
+				xmin = 0.2975000000000001
+				xmax = 0.33
+				text = "i"
+			intervals [3]:
+				xmin = 0.33
+				xmax = 0.8775000000000002
+				text = "sh"
+			intervals [4]:
+				xmin = 0.8775000000000002
+				xmax = 0.89
+				text = "i"
+			intervals [5]:
+				xmin = 0.89
+				xmax = 1.75
+				text = "ve"
+			intervals [6]:
+				xmin = 1.75
+				xmax = 1.97
+				text = "k"
+			intervals [7]:
+				xmin = 1.97
+				xmax = 2.21
+				text = "an"
+			intervals [8]:
+				xmin = 2.21
+				xmax = 2.34
+				text = "j"
+			intervals [9]:
+				xmin = 2.34
+				xmax = 3.0449999999999853
+				text = "ian"
+			intervals [10]:
+				xmin = 3.0449999999999853
+				xmax = 3.239999999999982
+				text = "SP"
+			intervals [11]:
+				xmin = 3.239999999999982
+				xmax = 3.729999999999986
+				text = "AP"
+			intervals [12]:
+				xmin = 3.729999999999986
+				xmax = 3.85
+				text = "h"
+			intervals [13]:
+				xmin = 3.85
+				xmax = 4.1
+				text = "ai"
+			intervals [14]:
+				xmin = 4.1
+				xmax = 4.27
+				text = "k"
+			intervals [15]:
+				xmin = 4.27
+				xmax = 4.84
+				text = "uo"
+			intervals [16]:
+				xmin = 4.84
+				xmax = 5.02
+				text = "t"
+			intervals [17]:
+				xmin = 5.02
+				xmax = 5.309999999999997
+				text = "ian"
+			intervals [18]:
+				xmin = 5.309999999999997
+				xmax = 5.46
+				text = "k"
+			intervals [19]:
+				xmin = 5.46
+				xmax = 6.314999999999999
+				text = "ong"
+			intervals [20]:
+				xmin = 6.314999999999999
+				xmax = 6.73381
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 6.73381
+		intervals: size = 22
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.2975000000000001
+				text = "zh"
+			intervals [2]:
+				xmin = 0.2975000000000001
+				xmax = 0.33
+				text = "i"
+			intervals [3]:
+				xmin = 0.33
+				xmax = 0.8775000000000002
+				text = "sh"
+			intervals [4]:
+				xmin = 0.8775000000000002
+				xmax = 0.89
+				text = "i"
+			intervals [5]:
+				xmin = 0.89
+				xmax = 1.75
+				text = "ve"
+			intervals [6]:
+				xmin = 1.75
+				xmax = 1.97
+				text = "k"
+			intervals [7]:
+				xmin = 1.97
+				xmax = 2.21
+				text = "an"
+			intervals [8]:
+				xmin = 2.21
+				xmax = 2.34
+				text = "j"
+			intervals [9]:
+				xmin = 2.34
+				xmax = 2.35
+				text = "i"
+			intervals [10]:
+				xmin = 2.35
+				xmax = 3.0449999999999853
+				text = "an"
+			intervals [11]:
+				xmin = 3.0449999999999853
+				xmax = 3.239999999999982
+				text = "SP"
+			intervals [12]:
+				xmin = 3.239999999999982
+				xmax = 3.729999999999986
+				text = "AP"
+			intervals [13]:
+				xmin = 3.729999999999986
+				xmax = 3.85
+				text = "h"
+			intervals [14]:
+				xmin = 3.85
+				xmax = 4.1
+				text = "ai"
+			intervals [15]:
+				xmin = 4.1
+				xmax = 4.27
+				text = "k"
+			intervals [16]:
+				xmin = 4.27
+				xmax = 4.84
+				text = "uo"
+			intervals [17]:
+				xmin = 4.84
+				xmax = 5.02
+				text = "t"
+			intervals [18]:
+				xmin = 5.02
+				xmax = 5.04
+				text = "i"
+			intervals [19]:
+				xmin = 5.04
+				xmax = 5.309999999999997
+				text = "an"
+			intervals [20]:
+				xmin = 5.309999999999997
+				xmax = 5.46
+				text = "k"
+			intervals [21]:
+				xmin = 5.46
+				xmax = 6.314999999999999
+				text = "ong"
+			intervals [22]:
+				xmin = 6.314999999999999
+				xmax = 6.73381
+				text = "SP"

@@ -1,0 +1,112 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.60069
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 2.60069
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.06
+				text = "SP"
+			intervals [2]:
+				xmin = 0.06
+				xmax = 0.38750000000000007
+				text = "uo"
+			intervals [3]:
+				xmin = 0.38750000000000007
+				xmax = 0.71
+				text = "i"
+			intervals [4]:
+				xmin = 0.71
+				xmax = 0.85
+				text = "j"
+			intervals [5]:
+				xmin = 0.85
+				xmax = 1.4299999999999957
+				text = "ing"
+			intervals [6]:
+				xmin = 1.4299999999999957
+				xmax = 1.47
+				text = "u"
+			intervals [7]:
+				xmin = 1.47
+				xmax = 1.57
+				text = "n"
+			intervals [8]:
+				xmin = 1.57
+				xmax = 1.8099999999999978
+				text = "eng"
+			intervals [9]:
+				xmin = 1.8099999999999978
+				xmax = 2.219999999999996
+				text = "uei"
+			intervals [10]:
+				xmin = 2.219999999999996
+				xmax = 2.32
+				text = "l"
+			intervals [11]:
+				xmin = 2.32
+				xmax = 2.60069
+				text = "i"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 2.60069
+		intervals: size = 12
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.06
+				text = "SP"
+			intervals [2]:
+				xmin = 0.06
+				xmax = 0.38750000000000007
+				text = "uo"
+			intervals [3]:
+				xmin = 0.38750000000000007
+				xmax = 0.71
+				text = "i"
+			intervals [4]:
+				xmin = 0.71
+				xmax = 0.85
+				text = "j"
+			intervals [5]:
+				xmin = 0.85
+				xmax = 1.4299999999999957
+				text = "ing"
+			intervals [6]:
+				xmin = 1.4299999999999957
+				xmax = 1.47
+				text = "u"
+			intervals [7]:
+				xmin = 1.47
+				xmax = 1.57
+				text = "n"
+			intervals [8]:
+				xmin = 1.57
+				xmax = 1.8099999999999978
+				text = "eng"
+			intervals [9]:
+				xmin = 1.8099999999999978
+				xmax = 1.82
+				text = "u"
+			intervals [10]:
+				xmin = 1.82
+				xmax = 2.219999999999996
+				text = "ei"
+			intervals [11]:
+				xmin = 2.219999999999996
+				xmax = 2.32
+				text = "l"
+			intervals [12]:
+				xmin = 2.32
+				xmax = 2.60069
+				text = "i"

@@ -1,0 +1,112 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.39169
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 2.39169
+		intervals: size = 11
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.275
+				text = "uo"
+			intervals [2]:
+				xmin = 0.275
+				xmax = 0.6375000000000002
+				text = "j"
+			intervals [3]:
+				xmin = 0.6375000000000002
+				xmax = 0.67
+				text = "ian"
+			intervals [4]:
+				xmin = 0.67
+				xmax = 0.85
+				text = "ch"
+			intervals [5]:
+				xmin = 0.85
+				xmax = 1.0299999999999998
+				text = "i"
+			intervals [6]:
+				xmin = 1.0299999999999998
+				xmax = 1.12
+				text = "b"
+			intervals [7]:
+				xmin = 1.12
+				xmax = 1.3399999999999996
+				text = "u"
+			intervals [8]:
+				xmin = 1.3399999999999996
+				xmax = 1.45
+				text = "n"
+			intervals [9]:
+				xmin = 1.45
+				xmax = 1.65
+				text = "eng"
+			intervals [10]:
+				xmin = 1.65
+				xmax = 1.83
+				text = "sh"
+			intervals [11]:
+				xmin = 1.83
+				xmax = 2.39169
+				text = "uo"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 2.39169
+		intervals: size = 12
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.275
+				text = "uo"
+			intervals [2]:
+				xmin = 0.275
+				xmax = 0.6375000000000002
+				text = "j"
+			intervals [3]:
+				xmin = 0.6375000000000002
+				xmax = 0.65
+				text = "i"
+			intervals [4]:
+				xmin = 0.65
+				xmax = 0.67
+				text = "an"
+			intervals [5]:
+				xmin = 0.67
+				xmax = 0.85
+				text = "ch"
+			intervals [6]:
+				xmin = 0.85
+				xmax = 1.0299999999999998
+				text = "i"
+			intervals [7]:
+				xmin = 1.0299999999999998
+				xmax = 1.12
+				text = "b"
+			intervals [8]:
+				xmin = 1.12
+				xmax = 1.3399999999999996
+				text = "u"
+			intervals [9]:
+				xmin = 1.3399999999999996
+				xmax = 1.45
+				text = "n"
+			intervals [10]:
+				xmin = 1.45
+				xmax = 1.65
+				text = "eng"
+			intervals [11]:
+				xmin = 1.65
+				xmax = 1.83
+				text = "sh"
+			intervals [12]:
+				xmin = 1.83
+				xmax = 2.39169
+				text = "uo"

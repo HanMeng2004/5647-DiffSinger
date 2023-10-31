@@ -1,0 +1,212 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 5.6425
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "words"
+		xmin = 0.0
+		xmax = 5.6425
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.21
+				text = "z"
+			intervals [2]:
+				xmin = 0.21
+				xmax = 0.3500000000000001
+				text = "uei"
+			intervals [3]:
+				xmin = 0.3500000000000001
+				xmax = 0.58
+				text = "SP"
+			intervals [4]:
+				xmin = 0.58
+				xmax = 0.65
+				text = "p"
+			intervals [5]:
+				xmin = 0.65
+				xmax = 1.0399999999999991
+				text = "a"
+			intervals [6]:
+				xmin = 1.0399999999999991
+				xmax = 1.1299999999999983
+				text = "SP"
+			intervals [7]:
+				xmin = 1.1299999999999983
+				xmax = 1.244999999999997
+				text = "AP"
+			intervals [8]:
+				xmin = 1.244999999999997
+				xmax = 1.45
+				text = "SP"
+			intervals [9]:
+				xmin = 1.45
+				xmax = 1.7899999999999967
+				text = "p"
+			intervals [10]:
+				xmin = 1.7899999999999967
+				xmax = 1.81
+				text = "eng"
+			intervals [11]:
+				xmin = 1.81
+				xmax = 2.0849999999999955
+				text = "iou"
+			intervals [12]:
+				xmin = 2.0849999999999955
+				xmax = 2.13
+				text = "SP"
+			intervals [13]:
+				xmin = 2.13
+				xmax = 2.3
+				text = "t"
+			intervals [14]:
+				xmin = 2.3
+				xmax = 2.63
+				text = "u"
+			intervals [15]:
+				xmin = 2.63
+				xmax = 2.74
+				text = "r"
+			intervals [16]:
+				xmin = 2.74
+				xmax = 3.08
+				text = "an"
+			intervals [17]:
+				xmin = 3.08
+				xmax = 3.14
+				text = "d"
+			intervals [18]:
+				xmin = 3.14
+				xmax = 3.28
+				text = "e"
+			intervals [19]:
+				xmin = 3.28
+				xmax = 3.45
+				text = "g"
+			intervals [20]:
+				xmin = 3.45
+				xmax = 3.95
+				text = "uan"
+			intervals [21]:
+				xmin = 3.95
+				xmax = 4.29
+				text = "x"
+			intervals [22]:
+				xmin = 4.29
+				xmax = 4.964999999999999
+				text = "in"
+			intervals [23]:
+				xmin = 4.964999999999999
+				xmax = 5.6425
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phones"
+		xmin = 0.0
+		xmax = 5.6425
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.21
+				text = "z"
+			intervals [2]:
+				xmin = 0.21
+				xmax = 0.22
+				text = "u"
+			intervals [3]:
+				xmin = 0.22
+				xmax = 0.3500000000000001
+				text = "ei"
+			intervals [4]:
+				xmin = 0.3500000000000001
+				xmax = 0.58
+				text = "SP"
+			intervals [5]:
+				xmin = 0.58
+				xmax = 0.65
+				text = "spn"
+			intervals [6]:
+				xmin = 0.65
+				xmax = 1.0399999999999991
+				text = "a"
+			intervals [7]:
+				xmin = 1.0399999999999991
+				xmax = 1.1299999999999983
+				text = "SP"
+			intervals [8]:
+				xmin = 1.1299999999999983
+				xmax = 1.244999999999997
+				text = "AP"
+			intervals [9]:
+				xmin = 1.244999999999997
+				xmax = 1.45
+				text = "SP"
+			intervals [10]:
+				xmin = 1.45
+				xmax = 1.7899999999999967
+				text = "spn"
+			intervals [11]:
+				xmin = 1.7899999999999967
+				xmax = 1.81
+				text = "eng"
+			intervals [12]:
+				xmin = 1.81
+				xmax = 1.86
+				text = "i"
+			intervals [13]:
+				xmin = 1.86
+				xmax = 2.0849999999999955
+				text = "ou"
+			intervals [14]:
+				xmin = 2.0849999999999955
+				xmax = 2.13
+				text = "SP"
+			intervals [15]:
+				xmin = 2.13
+				xmax = 2.3
+				text = "t"
+			intervals [16]:
+				xmin = 2.3
+				xmax = 2.63
+				text = "u"
+			intervals [17]:
+				xmin = 2.63
+				xmax = 2.74
+				text = "r"
+			intervals [18]:
+				xmin = 2.74
+				xmax = 3.08
+				text = "an"
+			intervals [19]:
+				xmin = 3.08
+				xmax = 3.14
+				text = "d"
+			intervals [20]:
+				xmin = 3.14
+				xmax = 3.28
+				text = "e"
+			intervals [21]:
+				xmin = 3.28
+				xmax = 3.45
+				text = "g"
+			intervals [22]:
+				xmin = 3.45
+				xmax = 3.95
+				text = "uan"
+			intervals [23]:
+				xmin = 3.95
+				xmax = 4.29
+				text = "x"
+			intervals [24]:
+				xmin = 4.29
+				xmax = 4.964999999999999
+				text = "in"
+			intervals [25]:
+				xmin = 4.964999999999999
+				xmax = 5.6425
+				text = "SP"

@@ -1,20 +1,23 @@
 base_config: configs/acoustic.yaml
 
 raw_data_dir:
-  - data/xxx1/raw
-  - data/xxx2/raw
+  - /home/hanmeng/DiffSinger/data/opencpop/raw
+
 speakers:
-  - speaker1
-  - speaker2
+  - opencpop
+
 spk_ids: []
 test_prefixes:
-  - wav1
-  - wav2
-  - wav3
-  - wav4
-  - wav5
+  - 2003000085
+  - 2007000214
+  - 2007000228
+  - 2010000354
+  - 2010000368
+
 dictionary: dictionaries/opencpop-extension.txt
-binary_data_dir: data/xxx/binary
+
+binary_data_dir: data/opencpop/binary
+
 binarization_args:
   num_workers: 0
 
