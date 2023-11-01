@@ -1,6 +1,6 @@
 # Guideline for Easy Multi-DiffSinger
 
-This is the final project for CS5647.
+This is the final project for CS5647. Please note that, for the time being, we only offer support for Mandarin Chinese.
 
 The model's name is Easy Multi-DiffSinger, which gives a preprocessing module of DiffSinger and enable it for multi-singer scenarios. The preprocessing module outline is shown here:
 
@@ -33,17 +33,42 @@ cd path/to/your/DiffSinger-main
 python scripts/train.py --config my_config.yaml --exp_name test_multi --reset
 ```
 
-5. Run the following command to inference on your audio file and lyrics:
+Here, please refer to the [schema](https://github.com/openvpi/DiffSinger/blob/main/docs/ConfigurationSchemas.md) to make modifications to the `my_config.yaml` file. Please replace `test_multi` with your model name for training.
+
+5.  Run the following command to inference on your audio file and lyrics:
 
 ```bash
-python /preprocess/main.py 
+python preprocess/main.py 
 ```
+
+You can find several example WAV, MIDI, and lyrics files under the `preprocess` folder. You can just visit our website demo to upload your files. However, if you wish to preprocess your files and infer via the command line, please follow these steps:
+
+- [ ] Replace `houlai.wav` with the directory of your own `.wav` audio file.
+- [ ] Replace `audio_output/preprocess/houlai_vocals.wav` with the directory of your `.wav` audio file after the separation process.
+- [ ] Replace `/home/hanmeng/DiffSinger/preprocess` with your desired output directory.
+- [ ] Replace `lyrics.txt` with the directory of your lyrics file.
+
+For the inference script:
+
+- [ ] Replace `samples/houlai.ds` with the directory of your `.ds` file.
+- [ ] Replace `test_multi` with the name of your model.
+- [ ] Replace `opencpop` with the name of the singer.
+- [ ] Replace `output/houlai` with your preferred output directory.
+
+These modifications will allow you to use the command line for preprocessing.
 
 6. Run the following command to inference on your music scores without **preprocessing module**:
 
 ```bash
-python scripts/infer.py acoustic samples/01_xiaoyaoxian.ds --exp test_multi --spk opencpop --out zaijian/xiaoyaoxian
+python scripts/infer.py acoustic samples/xiaoyaoxian.ds --exp test_multi --spk opencpop --out zaijian/xiaoyaoxian
 ```
+
+Apart from using the preprocessing module, if you have already had a `.ds` file, you can use it with the `infer.py` scripts. Please make the following modifications:
+
+- [ ] Replace `samples/xiaoyaoxian.ds` with the directory of your `.ds` file.
+- [ ] Replace `test_multi` with the name of your model.
+- [ ] Replace `opencpop` with the name of the singer.
+- [ ] Replace `zaijian/xiaoyaoxian` with your preferred output directory.
 
 The configs are:
 
