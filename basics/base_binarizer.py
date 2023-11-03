@@ -253,7 +253,7 @@ class BaseBinarizer:
         total_sec = {k: 0.0 for k in self.spk_map}
         total_raw_sec = {k: 0.0 for k in self.spk_map}
         extra_info = {'names': {}, 'spk_ids': {}, 'spk_names': {}, 'lengths': {}}
-        skipped = 0
+        max_no = -1
 
         for item_name, meta_data in self.meta_data_iterator(prefix):
             args.append([item_name, meta_data, self.binarization_args])
@@ -261,11 +261,11 @@ class BaseBinarizer:
         aug_map = self.arrange_data_augmentation(self.meta_data_iterator(prefix)) if apply_augmentation else {}
 
         def postprocess(_item):
-            nonlocal total_sec, total_raw_sec, extra_info, skipped
+            nonlocal total_sec, total_raw_sec, extra_info, max_no
             if _item is None:
-                skipped += (1 + len(aug_map.get(_item['name'], [])))
                 return
             item_no = builder.add_item(_item)
+            max_no = max(max_no, item_no)
             for k, v in _item.items():
                 if isinstance(v, np.ndarray):
                     if k not in extra_info:
@@ -281,6 +281,7 @@ class BaseBinarizer:
             for task in aug_map.get(_item['name'], []):
                 aug_item = task['func'](_item, **task['kwargs'])
                 aug_item_no = builder.add_item(aug_item)
+                max_no = max(max_no, aug_item_no)
                 for k, v in aug_item.items():
                     if isinstance(v, np.ndarray):
                         if k not in extra_info:
@@ -306,8 +307,7 @@ class BaseBinarizer:
                     item = self.process_item(*a)
                     postprocess(item)
             for k in extra_info:
-                assert set(extra_info[k]) == set(range(len(args) + sum(len(x) for x in aug_map.values()) - skipped)), \
-                    f'Item numbering is not consecutive.'
+                assert set(extra_info[k]) == set(range(max_no + 1)), f'Item numbering is not consecutive.'
                 extra_info[k] = list(map(lambda x: x[1], sorted(extra_info[k].items(), key=lambda x: x[0])))
         except KeyboardInterrupt:
             builder.finalize()
