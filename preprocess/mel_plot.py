@@ -3,7 +3,7 @@ import librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
 
-audio_file = "01_xiaoyaoxian-man1.wav"
+audio_file = "01_xiaoyaoxian-opencpop.wav"
 y, sr = librosa.load(audio_file)
 
 mel_spectrogram = librosa.feature.melspectrogram(y=y, sr=sr)
